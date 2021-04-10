@@ -75,6 +75,12 @@ body {
       text-align: center;
       width: 30%;
     }
+
+    &:hover {
+      color: white;
+      background: violet;
+      border: violet solid 1px;
+    }
   }
 
   &__footer {
@@ -90,6 +96,11 @@ body {
       padding: 8px;
       border: white solid 1px;
       border-radius: 150px;
+
+      &:hover {
+        border: violet solid 1px;
+        color: violet;
+      }
     }
   }
 }
