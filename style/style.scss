@@ -1,0 +1,71 @@
+body {
+  background: rgb(88, 11, 151);
+  color: white;
+  font-family: "Raleway", sans-serif;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../assets/images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.head {
+  display: flex;
+  flex-direction: column;
+
+  &__logo {
+    width: 200px;
+    margin: 0;
+    padding: 50px;
+  }
+
+  &__image {
+    width: 80%;
+    margin: auto;
+  }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  text-align: center;
+
+  &__title {
+      line-height: 48px;
+  }
+
+  &__description {
+    font-size: 1.2em;
+    line-height: 32px;
+    margin: 0;
+    padding-bottom: 30px;
+  }
+
+  &__nav {
+      text-decoration: none;
+      font-weight: 520;
+      border: white solid 1px;
+      border-radius: 50px;
+      background: white;
+      color: rgb(88, 11, 151);
+      margin: auto;
+      width: 60%;
+      padding: 10px;      
+  }
+
+  &__footer {
+
+    padding: 80px 20px 0;
+         
+    &-link {
+        color: white;
+        margin: 5px;
+        padding: 8px;
+        border: white solid 1px;
+        border-radius: 150px;
+    }
+  }
+
+}
