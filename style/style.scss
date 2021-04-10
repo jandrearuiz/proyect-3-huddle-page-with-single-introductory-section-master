@@ -2,7 +2,6 @@ body {
   background: rgb(88, 11, 151);
   color: white;
   font-family: "Raleway", sans-serif;
-  height: 100vh;
 }
 .container {
   display: flex;
@@ -10,6 +9,14 @@ body {
   background-image: url(../assets/images/bg-mobile.svg);
   background-repeat: no-repeat;
   background-size: 100%;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    background-image: url(../assets/images/bg-desktop.svg);
+    width: 100%;
+    height: 100%;
+  }
 }
 .head {
   display: flex;
@@ -25,6 +32,10 @@ body {
     width: 80%;
     margin: auto;
   }
+
+  @media (min-width: 1024px) {
+    min-width: 60%;
+  }
 }
 .card {
   display: flex;
@@ -32,8 +43,13 @@ body {
   padding: 50px;
   text-align: center;
 
+  @media (min-width: 1024px) {
+    text-align: initial;
+    justify-content: center;
+  }
+
   &__title {
-      line-height: 48px;
+    line-height: 48px;
   }
 
   &__description {
@@ -44,28 +60,36 @@ body {
   }
 
   &__nav {
-      text-decoration: none;
-      font-weight: 520;
-      border: white solid 1px;
-      border-radius: 50px;
-      background: white;
-      color: rgb(88, 11, 151);
-      margin: auto;
-      width: 60%;
-      padding: 10px;      
-  }
+    text-decoration: none;
+    font-weight: 520;
+    border: white solid 1px;
+    border-radius: 50px;
+    background: white;
+    color: rgb(88, 11, 151);
+    margin: auto;
+    width: 60%;
+    padding: 10px;
 
-  &__footer {
-
-    padding: 80px 20px 0;
-         
-    &-link {
-        color: white;
-        margin: 5px;
-        padding: 8px;
-        border: white solid 1px;
-        border-radius: 150px;
+    @media (min-width: 1024px) {
+      margin: 0;
+      text-align: center;
+      width: 30%;
     }
   }
 
+  &__footer {
+    padding: 80px 20px 0;
+
+    @media (min-width: 1024px) {
+      text-align: right;
+    }
+
+    &-link {
+      color: white;
+      margin: 5px;
+      padding: 8px;
+      border: white solid 1px;
+      border-radius: 150px;
+    }
+  }
 }
