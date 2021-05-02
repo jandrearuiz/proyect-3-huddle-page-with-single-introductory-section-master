@@ -1,0 +1,12 @@
+.social-link {
+  color: var(--c-white);
+  margin: 5px;
+  padding: 8px;
+  border: var(--c-white) solid 1px;
+  border-radius: 150px;
+
+  &:hover {
+    border: var(--c-lila) solid 1px;
+    color: var(--c-lila);
+  }
+}

@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  
+    @media (min-width: $b-medium) {
+      display: flex;
+      flex-direction: row;
+      background-image: url(../assets/images/bg-desktop.svg);
+      width: 100%;
+      height: 100%;
+    }
+  }
